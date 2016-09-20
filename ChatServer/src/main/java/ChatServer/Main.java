@@ -30,9 +30,7 @@ public class Main extends PluginBase implements Listener {
 				if(args.length == 0)
 					sender.sendMessage("Please type a message /hello <msg>");
 				if(args.length > 0) {
-					for(int i = 0;i < args.length; i++) {
-						message += args[i];
-					}
+					message= String.join(" ",args);
 					sender.sendMessage(sender.getName() + " " + message);
 				}
 			break;
